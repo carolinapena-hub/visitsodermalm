@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Södermalm – Turism, Turer, Sevärdheter & Mat</title>
+  <meta name="description" content="Upptäck Södermalm: turer, sevärdheter, mat & service, live-evenemang och karta med gångtider och kollektivtrafik.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header" id="top">
+  <nav class="container nav">
+    <a class="logo" href="#top">Södermalm</a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Öppna meny">☰</button>
+    <ul id="navLinks" class="nav-links">
+      <li><a href="#about" data-i18n="nav.about">Om Söder</a></li>
+      <li><a href="#tours" data-i18n="nav.tours">Turer</a></li>
+      <li><a href="#sights" data-i18n="nav.sights">Sevärdheter</a></li>
+      <li><a href="#food" data-i18n="nav.food">Mat & Service</a></li>
+      <li><a href="#events" data-i18n="nav.events">Aktuellt</a></li>
+      <li><a href="#map" data-i18n="nav.map">Karta</a></li>
+      <li><a href="#gallery" data-i18n="nav.gallery">Galleri</a></li>
+      <li><a href="#planner" data-i18n="nav.planner">Planerare</a></li>
+    </ul>
+    <select id="langSelect" aria-label="Språk / Language">
+      <option value="sv">🇸🇪 Svenska</option>
+      <option value="en">🇬🇧 English</option>
+    </select>
+  </nav>
+
+  <section class="hero" role="img" aria-label="Utsikt över Södermalm">
+    <div class="overlay">
+      <h1 data-i18n="hero.title">Upptäck Södermalm</h1>
+      <p data-i18n="hero.text">Historiska gränder, kreativa kvarter och Stockholms bästa vyer.</p>
+      <a class="btn btn-primary" href="#tours" data-i18n="hero.cta">Boka en tur</a>
+    </div>
+  </section>
+</header>
+
+<main>
+  <!-- Om Södermalm -->
+  <section id="about" class="container section">
+    <div class="two-col">
+      <div>
+        <h2 data-i18n="about.title">Om Södermalm</h2>
+        <p data-i18n="about.text">
+          Södermalm – ”Söder” – är Stockholms mest levande stadsdel. Kullerstensgränder,
+          lokala designerbutiker, parker som Tantolunden och utsikter från Monteliusvägen.
+        </p>
+        <ul class="checklist">
+          <li data-i18n="about.point1">Shopping & fika i SoFo kring Nytorget</li>
+          <li data-i18n="about.point2">Utsikter från Monteliusvägen & Fjällgatan</li>
+          <li data-i18n="about.point3">Bad och picknick längs Årstaviken</li>
+        </ul>
+      </div>
+      <aside class="fact-card">
+        <h3 data-i18n="about.facts">Snabba fakta</h3>
+        <dl>
+          <dt data-i18n="about.cityLbl">Stad</dt><dd>Stockholm</dd>
+          <dt data-i18n="about.bestLbl">Bäst tid</dt><dd data-i18n="about.bestVal">Maj–September</dd>
+          <dt data-i18n="about.vibeLbl">Stämning</dt><dd data-i18n="about.vibeVal">Kreativ & urban</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Turer -->
+  <section id="tours" class="container section">
+    <h2 data-i18n="tours.title">Guidade turer</h2>
+    <div class="cards">
+      <article class="card tour">
+        <img src="https://images.unsplash.com/photo-1536697246787-1f7ae568d9d1?q=80&w=1200&auto=format&fit=crop" alt="Utsikt över Riddarfjärden">
+        <div class="card-body">
+          <h3 data-i18n="tours.t1.title">Historiska Söder – kvällsvandring</h3>
+          <p data-i18n="tours.t1.meta">2 timmar · Svenska/Engelska</p>
+          <p data-i18n="tours.t1.desc">Katarina kyrka, Mosebacke och Monteliusvägen – full av historier och fotochanser.</p>
+          <button class="btn btn-outline book-btn" data-tour="Historiska Söder">Boka</button>
+        </div>
+      </article>
+      <article class="card tour">
+        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1200&auto=format&fit=crop" alt="Kafébord i SoFo">
+        <div class="card-body">
+          <h3 data-i18n="tours.t2.title">SoFo smakrunda</h3>
+          <p data-i18n="tours.t2.meta">2,5 timmar · Smakprov ingår</p>
+          <p data-i18n="tours.t2.desc">Kaféer och street food runt Nytorget & Skånegatan.</p>
+          <button class="btn btn-outline book-btn" data-tour="SoFo smakrunda">Boka</button>
+        </div>
+      </article>
+      <article class="card tour">
+        <img src="https://images.unsplash.com/photo-1520451644838-906a72aa7b26?q=80&w=1200&auto=format&fit=crop" alt="Katarina kyrka">
+        <div class="card-body">
+          <h3 data-i18n="tours.t3.title">Panorama & parker</h3>
+          <p data-i18n="tours.t3.meta">1,5 timmar · Lugn takt</p>
+          <p data-i18n="tours.t3.desc">Skinnarviksberget, Tantolunden och Fjällgatan.</p>
+          <button class="btn btn-outline book-btn" data-tour="Panorama & parker">Boka</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sevärdheter -->
+  <section id="sights" class="container section">
+    <h2 data-i18n="sights.title">Sevärdheter</h2>
+    <div class="cards">
+      <article class="card poi" data-tags="utsikt historia" data-poi="montelius">
+        <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1200&auto=format&fit=crop" alt="Monteliusvägen">
+        <div class="card-body">
+          <h3>Monteliusvägen</h3>
+          <p data-i18n="sights.montelius">Solnedgångsvy över Riddarfjärden och Stadshuset.</p>
+        </div>
+      </article>
+      <article class="card poi" data-poi="fjallgatan">
+        <img src="https://images.unsplash.com/photo-1594380740437-1df0f7d64f85?q=80&w=1200&auto=format&fit=crop" alt="Fjällgatan">
+        <div class="card-body">
+          <h3>Fjällgatan</h3>
+          <p data-i18n="sights.fjallgatan">Trähus och vida vyer mot Saltsjön & Djurgården.</p>
+        </div>
+      </article>
+      <article class="card poi" data-poi="tantolunden">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?q=80&w=1200&auto=format&fit=crop" alt="Tantolunden">
+        <div class="card-body">
+          <h3>Tantolunden</h3>
+          <p data-i18n="sights.tanto">Kolonilotter, minigolf och bad längs Årstaviken.</p>
+        </div>
+      </article>
+      <article class="card poi" data-poi="fotografiska">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Photographiska_stockholm.jpg" alt="Fotografiska museet">
+        <div class="card-body">
+          <h3>Fotografiska</h3>
+          <p data-i18n="sights.fotografiska">Världsledande fotomuseum med restaurang & bar.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Mat & Service -->
+  <section id="food" class="container section">
+    <div class="section-header">
+      <h2 data-i18n="food.title">Restauranger & service</h2>
+      <div class="filters">
+        <input id="searchInput" type="search" placeholder="Sök t.ex. 'kafé' eller 'veg'" aria-label="Sök" />
+        <select id="categoryFilter" aria-label="Kategori">
+          <option value="alla" data-i18n="food.cat.all">Alla</option>
+          <option value="restaurang" data-i18n="food.cat.restaurant">Restaurang</option>
+          <option value="kafé" data-i18n="food.cat.cafe">Kafé</option>
+          <option value="bar" data-i18n="food.cat.bar">Bar</option>
+          <option value="veg" data-i18n="food.cat.veg">Veg/Vegansk</option>
+          <option value="service" data-i18n="food.cat.service">Service</option>
+        </select>
+      </div>
+    </div>
+    <div id="listing" class="cards list">
+      <article class="card item" data-cat="kafé veg" data-name="Nytorget Kaffebar">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="Kafé">
+        <div class="card-body">
+          <h3>Nytorget Kaffebar</h3>
+          <p data-i18n="food.item1">SoFo-favorit med frukost & uteservering.</p>
+          <span class="badge">Kafé</span> <span class="badge">Veg</span>
+        </div>
+      </article>
+      <article class="card item" data-cat="restaurang" data-name="Trattoria Söder">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1200&auto=format&fit=crop" alt="Pasta">
+        <div class="card-body">
+          <h3>Trattoria Söder</h3>
+          <p data-i18n="food.item2">Rustik italiensk mat nära Mariatorget.</p>
+          <span class="badge">Restaurang</span>
+        </div>
+      </article>
+      <article class="card item" data-cat="bar" data-name="Hornstulls Bryggeri">
+        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1200&auto=format&fit=crop" alt="Mikrobryggeri">
+        <div class="card-body">
+          <h3>Hornstulls Bryggeri</h3>
+          <p data-i18n="food.item3">Lokalt mikrobryggeri med säsongsöl.</p>
+          <span class="badge">Bar</span>
+        </div>
+      </article>
+      <article class="card item" data-cat="veg restaurang" data-name="Grönskan SoFo">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop" alt="Vegansk rätt">
+        <div class="card-body">
+          <h3>Grönskan SoFo</h3>
+          <p data-i18n="food.item4">Plantbaserat kök med nordiska smaker.</p>
+          <span class="badge">Veg</span> <span class="badge">Restaurang</span>
+        </div>
+      </article>
+      <article class="card item" data-cat="service" data-name="Apotek Söderhallarna">
+        <img src="https://images.unsplash.com/photo-1580281657527-47c168d25b83?q=80&w=1200&auto=format&fit=crop" alt="Apotek">
+        <div class="card-body">
+          <h3>Apotek Söderhallarna</h3>
+          <p data-i18n="food.item5">Centralt apotek med generösa öppettider.</p>
+          <span class="badge">Service</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Aktuellt / Live -->
+  <section id="events" class="container section">
+    <h2 data-i18n="events.title">Aktuellt på Södermalm</h2>
+    <ul id="eventList" class="event-list" aria-live="polite">
+      <li data-i18n="events.loading">Hämtar aktuella evenemang…</li>
+    </ul>
+  </section>
+
+  <!-- Karta & Ta sig runt -->
+  <section id="map" class="section">
+    <div class="container">
+      <h2 data-i18n="map.title">Karta & ta sig runt</h2>
+      <p data-i18n="map.desc">
+        Se Södermalm på kartan, beräkna ungefärlig gångtid mellan platser och se närmaste tunnelbanestationer.
+      </p>
+
+      <div class="map-embed">
+        <iframe
+          title="Karta över Södermalm"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=18.013%2C59.303%2C18.105%2C59.323&layer=mapnik&marker=59.315%2C18.064"
+          loading="lazy" style="border:0"></iframe>
+        <a class="map-link" href="https://www.openstreetmap.org/#map=14/59.315/18.064" target="_blank" rel="noopener" data-i18n="map.open">Öppna större karta</a>
+      </div>
+
+      <div class="travel-grid">
+        <div class="card">
+          <div class="card-body">
+            <h3 data-i18n="map.walkHeader">Beräkna gångtid</h3>
+            <div class="walk-grid">
+              <label>
+                <span data-i18n="map.from">Från</span>
+                <select id="fromPoi"></select>
+              </label>
+              <label>
+                <span data-i18n="map.to">Till</span>
+                <select id="toPoi"></select>
+              </label>
+              <label>
+                <span data-i18n="map.speed">Gånghastighet</span>
+                <select id="walkSpeed">
+                  <option value="4.8">4.8 km/h (lugnt)</option>
+                  <option value="5.0" selected>5.0 km/h (normal)</option>
+                  <option value="5.5">5.5 km/h (pigg)</option>
+                </select>
+              </label>
+              <button id="calcWalk" class="btn btn-primary" data-i18n="map.calc">Beräkna</button>
+            </div>
+            <p id="walkResult" class="muted"></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3 data-i18n="map.transitHeader">Kollektivtrafik i närheten</h3>
+            <ul class="ticks">
+              <li><strong>Slussen</strong> – T-bana (Röda/Gröna linjen)</li>
+              <li><strong>Medborgarplatsen</strong> – T-bana (Gröna)</li>
+              <li><strong>Mariatorget</strong> – T-bana (Röda)</li>
+              <li><strong>Skanstull</strong> – T-bana (Gröna)</li>
+              <li><strong>Hornstull</strong> – T-bana (Röda)</li>
+            </ul>
+            <p class="muted" data-i18n="map.transitNote">Använd SL-appen för realtidsavgångar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galleri -->
+  <section id="gallery" class="container section">
+    <h2 data-i18n="gallery.title">Galleri</h2>
+    <div class="masonry">
+      <img class="zoomable" src="https://images.unsplash.com/photo-1503152394-d7d76eeed3c5?q=80&w=900&auto=format&fit=crop" alt="Skinnarviksberget">
+      <img class="zoomable" src="https://images.unsplash.com/photo-1564836235918-30ccf2c2b16e?q=80&w=900&auto=format&fit=crop" alt="SoFo gata">
+      <img class="zoomable" src="https://images.unsplash.com/photo-1533142266415-ac591a4c3b86?q=80&w=900&auto=format&fit=crop" alt="Hornstull">
+      <img class="zoomable" src="https://images.unsplash.com/photo-1529922432840-154d6dff9b42?q=80&w=900&auto=format&fit=crop" alt="Södermalm bro">
+    </div>
+  </section>
+
+  <!-- Planerare -->
+  <section id="planner" class="container section">
+    <h2 data-i18n="planner.title">Planera din dag</h2>
+    <form id="plannerForm" class="planner">
+      <label>
+        <span data-i18n="planner.choose">Välj aktivitet</span>
+        <select id="plannerSelect">
+          <option>Monteliusvägen (utsikt)</option>
+          <option>SoFo smakrunda (mat)</option>
+          <option>Tantolunden (park & bad)</option>
+          <option>Mosebacke & Södra Teatern (kultur)</option>
+        </select>
+      </label>
+      <button type="button" id="addPlan" class="btn btn-primary" data-i18n="planner.add">Lägg till</button>
+      <button type="button" id="clearPlan" class="btn btn-ghost" data-i18n="planner.clear">Rensa</button>
+    </form>
+    <ol id="planList" class="plan-list" aria-live="polite"></ol>
+    <a id="downloadPlan" class="btn btn-outline" href="#" download="sodermalm-plan.txt" style="display:none;" data-i18n="planner.download">Ladda ner plan</a>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3 data-i18n="footer.contact">Kontakt</h3>
+      <p>E-post: info@soderguide.se<br>Telefon: +46 (0)8-123 45 67</p>
+    </div>
+    <div>
+      <h3 data-i18n="footer.tips">Praktiskt</h3>
+      <ul class="ticks">
+        <li data-i18n="footer.shoes">Bekväma skor rekommenderas</li>
+        <li data-i18n="footer.access">Flera stråk är barnvagnsvänliga</li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="footer.follow">Följ oss</h3>
+      <p><a href="#" aria-label="Instagram">Instagram</a> · <a href="#" aria-label="Facebook">Facebook</a></p>
+    </div>
+  </div>
+  <p class="copyright">© <span id="year"></span> Söderguiden</p>
+</footer>
+
+<!-- Bildvisare -->
+<div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Bildvisare">
+  <button id="modalClose" class="modal-close" aria-label="Stäng">×</button>
+  <img id="modalImg" alt="Förstorad bild">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
