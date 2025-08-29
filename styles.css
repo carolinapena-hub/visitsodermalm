@@ -35,7 +35,7 @@ a:hover{text-decoration:underline}
 
 .hero{
   position:relative; height:56vh; min-height:420px;
-  background: url('images/herosodermalmnight.jpg') center/cover no-repeat;
+  background: url('kvallsoder.jpg') center/cover no-repeat;
   border-bottom:1px solid var(--line);
 }
 .hero .overlay{
@@ -134,4 +134,5 @@ a:hover{text-decoration:underline}
   .nav-links.open{display:flex}
   .menu-toggle{display:block}
 }
+
 
