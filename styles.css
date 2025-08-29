@@ -39,9 +39,10 @@ a:hover{text-decoration:underline}
   border-bottom:1px solid var(--line);
 }
 .hero .overlay{
-  position:absolute; inset:0; display:grid; place-content:center;
-  text-align:center; padding:24px; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.25));
-  color:#fff;
+  position:absolute; inset:0; display:grid; place-content:center;
+  text-align:center; padding:24px; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.25));
+  color:#fff;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
 }
 .hero h1{font-size:clamp(2.2rem, 4vw, 3.6rem)}
 .hero p{font-size:1.1rem; margin:10px 0 20px}
@@ -134,5 +135,6 @@ a:hover{text-decoration:underline}
   .nav-links.open{display:flex}
   .menu-toggle{display:block}
 }
+
 
 
